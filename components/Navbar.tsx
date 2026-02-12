@@ -46,9 +46,9 @@ export default function Navbar() {
           <Link href="/#keunggulan" className="text-gray-300 hover:text-green-400 transition hover:scale-105 font-medium text-sm tracking-wide">Keunggulan</Link>
           <Link href="/#galeri" className="text-gray-300 hover:text-green-400 transition hover:scale-105 font-medium text-sm tracking-wide">Galeri</Link>
           
-          {/* LOGIKA TOMBOL LOGIN (AJAIB) */}
-          
-          {/* 1. Kalau Belum Login (SignedOut), Tampilkan Tombol Hijau */}
+          {/* (Tombol Kuning Sudah Dihapus Disini) */}
+
+          {/* LOGIKA LOGIN */}
           <SignedOut>
             <SignInButton mode="modal">
               <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-green-500/30 cursor-pointer">
@@ -57,7 +57,6 @@ export default function Navbar() {
             </SignInButton>
           </SignedOut>
 
-          {/* 2. Kalau Sudah Login (SignedIn), Tampilkan Foto Profil */}
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
@@ -66,8 +65,6 @@ export default function Navbar() {
 
         {/* TOMBOL HAMBURGER (HP) */}
         <div className="md:hidden z-50 flex items-center gap-4">
-          
-          {/* Di HP juga kita pasang UserButton kalau sudah login */}
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
@@ -85,7 +82,8 @@ export default function Navbar() {
             <Link href="/#keunggulan" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold text-white hover:text-green-400 transition">Keunggulan</Link>
             <Link href="/#galeri" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-bold text-white hover:text-green-400 transition">Galeri</Link>
             
-            {/* Tombol Login Versi HP */}
+            {/* (Tombol Kuning HP Sudah Dihapus Disini) */}
+
             <SignedOut>
               <SignInButton mode="modal">
                 <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold text-xl transition">

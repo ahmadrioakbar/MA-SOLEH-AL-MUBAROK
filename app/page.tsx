@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="bg-black min-h-screen">
       
-      {/* HERO SECTION (BAGIAN YANG KITA UBAH JADI HIJAU) */}
+      {/* HERO SECTION */}
       <section id="beranda" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         
         {/* Background Foto Gedung Sekolah */}
@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mt-10">
           
-          {/* 1. BADGE PENDAFTARAN (HIJAU) */}
+          {/* BADGE HIJAU */}
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function Home() {
             </span>
           </motion.div>
 
-          {/* 2. JUDUL BESAR (GRADASI HIJAU) */}
+          {/* JUDUL BESAR */}
           <motion.h1 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -65,7 +65,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col md:flex-row gap-6 justify-center items-center"
           >
-            {/* 3. TOMBOL DAFTAR (HIJAU) */}
+            {/* 🔥 INI YANG SAYA UBAH: TOMBOL JADI 'DAFTAR PSMB' */}
             <Link href="/ppdb" className="px-10 py-4 bg-green-600 hover:bg-green-700 text-white text-lg font-bold rounded-full transition-all shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-105 active:scale-95 flex items-center gap-2">
               Daftar Sekarang
             </Link>
